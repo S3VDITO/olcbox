@@ -1,0 +1,117 @@
+Calculating task graph as configuration cache cannot be reused because properties file C:\Users\User\olcbox\local.properties has changed.
+
+> Configure project :sharedUI
+WARNING: The 'commonTest' source directory exists, but android host tests are not enabled. To enable android host tests, add `withHostTest {}` to your android target configuration in the Gradle build file.
+Add android.sync.suppressAgpWarnings=GENERIC to the gradle.properties file to suppress this warning.
+w: [33m[1mNative task 'macosArm64Test' is disabled[0m[0m
+Task 'macosArm64Test' for target 'macos_arm64' cannot run on the current host (mingw_x64).
+Reason: tests can only run on macos_arm64
+[32m[1mSolution:[0m[0m
+[32m[3mTo suppress this warning, add 'kotlin.native.ignoreDisabledTargets=true' to gradle.properties.[0m[0m
+
+w: [33m[1mNative task 'iosSimulatorArm64Test' is disabled[0m[0m
+Task 'iosSimulatorArm64Test' for target 'ios_simulator_arm64' cannot run on the current host (windows-x86_64).
+Reason: simulator tests require macOS
+[32m[1mSolution:[0m[0m
+[32m[3mTo suppress this warning, add 'kotlin.native.ignoreDisabledTargets=true' to gradle.properties.[0m[0m
+
+
+> Task :androidApp:preBuild UP-TO-DATE
+> Task :sharedUI:androidPreBuild UP-TO-DATE
+> Task :androidApp:generateDebugAssets UP-TO-DATE
+> Task :sharedUI:preAndroidMainBuild UP-TO-DATE
+> Task :androidApp:preDebugBuild UP-TO-DATE
+> Task :androidApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :sharedUI:convertXmlValueResourcesForAndroidMain NO-SOURCE
+> Task :sharedUI:copyNonXmlValueResourcesForAndroidMain NO-SOURCE
+> Task :sharedUI:prepareComposeResourcesTaskForAndroidMain NO-SOURCE
+> Task :sharedUI:generateResourceAccessorsForAndroidMain NO-SOURCE
+> Task :sharedUI:generateExpectResourceCollectorsForCommonMain UP-TO-DATE
+> Task :androidApp:mapDebugSourceSetPaths UP-TO-DATE
+> Task :androidApp:generateDebugResources UP-TO-DATE
+> Task :androidApp:extractDeepLinksDebug UP-TO-DATE
+> Task :sharedUI:writeAndroidMainAarMetadata UP-TO-DATE
+> Task :androidApp:javaPreCompileDebug UP-TO-DATE
+> Task :sharedUI:kmpPartiallyResolvedDependenciesChecker
+> Task :sharedUI:generateComposeResClass UP-TO-DATE
+> Task :sharedUI:convertXmlValueResourcesForCommonMain UP-TO-DATE
+> Task :androidApp:generateDebugGlobalSynthetics UP-TO-DATE
+> Task :sharedUI:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :androidApp:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :sharedUI:generateAndroidMainEmptyResourceFiles UP-TO-DATE
+> Task :androidApp:writeDebugAppMetadata UP-TO-DATE
+> Task :androidApp:validateSigningDebug UP-TO-DATE
+> Task :androidApp:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :sharedUI:processAndroidMainManifest UP-TO-DATE
+> Task :androidApp:packageDebugResources UP-TO-DATE
+> Task :androidApp:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sharedUI:mergeAndroidMainJniLibFolders UP-TO-DATE
+> Task :sharedUI:generateAppInfo UP-TO-DATE
+> Task :sharedUI:mergeAndroidMainNativeLibs NO-SOURCE
+> Task :sharedUI:copyAndroidMainJniLibsProjectOnly UP-TO-DATE
+> Task :sharedUI:copyNonXmlValueResourcesForCommonMain UP-TO-DATE
+> Task :sharedUI:prepareComposeResourcesTaskForCommonMain UP-TO-DATE
+> Task :sharedUI:generateResourceAccessorsForCommonMain UP-TO-DATE
+> Task :sharedUI:generateActualResourceCollectorsForAndroidMain UP-TO-DATE
+> Task :androidApp:checkDebugDuplicateClasses UP-TO-DATE
+> Task :androidApp:configureNdkBuildDebug[armeabi-v7a]
+> Task :androidApp:configureNdkBuildDebug[arm64-v8a]
+> Task :androidApp:configureNdkBuildDebug[x86_64]
+> Task :androidApp:desugarDebugFileDependencies UP-TO-DATE
+> Task :androidApp:mergeExtDexDebug UP-TO-DATE
+> Task :androidApp:buildNdkBuildDebug[arm64-v8a]
+> Task :androidApp:buildNdkBuildDebug[armeabi-v7a]
+> Task :androidApp:buildNdkBuildDebug[x86_64]
+Daemon will be stopped at the end of the build stop command received
+> Task :sharedUI:olcrtc-bin:buildOlcrtcAndroidAar
+> Task :androidApp:mergeDebugAssets
+> Task :androidApp:compressDebugAssets
+> Task :androidApp:checkDebugAarMetadata
+> Task :androidApp:processDebugNavigationResources
+> Task :androidApp:compileDebugNavigationResources
+> Task :androidApp:parseDebugLocalResources
+> Task :androidApp:generateDebugRFile
+> Task :androidApp:processDebugMainManifest
+> Task :androidApp:mergeDebugNativeLibs
+> Task :androidApp:processDebugManifest
+> Task :androidApp:processDebugManifestForPackage
+> Task :androidApp:stripDebugDebugSymbols
+> Task :androidApp:mergeDebugResources
+> Task :sharedUI:compileAndroidMain
+> Task :androidApp:processDebugResources
+
+> Task :sharedUI:compileAndroidMain
+w: file:///C:/Users/User/olcbox/sharedUI/src/androidMain/kotlin/org/olcbox/app/ui/activities/AndroidAppSettingsSheets.kt:155:22 'fun rememberModalBottomSheetState(skipPartiallyExpanded: Boolean = ..., confirmValueChange: (SheetValue) -> Boolean = ...): SheetState' is deprecated. Use rememberBottomSheetState with Hidden initial value.
+w: file:///C:/Users/User/olcbox/sharedUI/src/androidMain/kotlin/org/olcbox/app/ui/activities/AndroidConfigShareSheet.kt:53:22 'fun rememberModalBottomSheetState(skipPartiallyExpanded: Boolean = ..., confirmValueChange: (SheetValue) -> Boolean = ...): SheetState' is deprecated. Use rememberBottomSheetState with Hidden initial value.
+w: file:///C:/Users/User/olcbox/sharedUI/src/androidMain/kotlin/org/olcbox/app/update/AndroidUpdateInstaller.kt:82:30 'static field ACTION_INSTALL_PACKAGE: String' is deprecated. Deprecated in Java.
+w: file:///C:/Users/User/olcbox/sharedUI/src/androidMain/kotlin/org/olcbox/app/vpn/service/OlcboxVpnService.kt:1308:46 'val allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java.
+w: file:///C:/Users/User/olcbox/sharedUI/src/commonMain/kotlin/org/olcbox/app/ui/components/ApplicationSettingsSheet.kt:142:22 'fun rememberModalBottomSheetState(skipPartiallyExpanded: Boolean = ..., confirmValueChange: (SheetValue) -> Boolean = ...): SheetState' is deprecated. Use rememberBottomSheetState with Hidden initial value.
+w: file:///C:/Users/User/olcbox/sharedUI/src/commonMain/kotlin/org/olcbox/app/ui/components/ApplicationUpdateOfferSheet.kt:37:22 'fun rememberModalBottomSheetState(skipPartiallyExpanded: Boolean = ..., confirmValueChange: (SheetValue) -> Boolean = ...): SheetState' is deprecated. Use rememberBottomSheetState with Hidden initial value.
+w: file:///C:/Users/User/olcbox/sharedUI/src/commonMain/kotlin/org/olcbox/app/ui/features/home/components/AddConfigurationSheet.kt:53:22 'fun rememberModalBottomSheetState(skipPartiallyExpanded: Boolean = ..., confirmValueChange: (SheetValue) -> Boolean = ...): SheetState' is deprecated. Use rememberBottomSheetState with Hidden initial value.
+w: file:///C:/Users/User/olcbox/sharedUI/src/commonMain/kotlin/org/olcbox/app/ui/features/home/components/LogsSheet.kt:47:22 'fun rememberModalBottomSheetState(skipPartiallyExpanded: Boolean = ..., confirmValueChange: (SheetValue) -> Boolean = ...): SheetState' is deprecated. Use rememberBottomSheetState with Hidden initial value.
+
+> Task :sharedUI:processAndroidMainJavaRes
+> Task :sharedUI:bundleAndroidMainClassesToRuntimeJar
+> Task :sharedUI:bundleAndroidMainClassesToCompileJar
+> Task :androidApp:compileDebugKotlin
+> Task :androidApp:compileDebugJavaWithJavac NO-SOURCE
+> Task :androidApp:processDebugJavaRes
+> Task :androidApp:dexBuilderDebug
+> Task :androidApp:mergeProjectDexDebug
+> Task :androidApp:mergeDebugJavaResource
+> Task :androidApp:mergeLibDexDebug
+> Task :androidApp:packageDebug
+> Task :androidApp:assembleDebug
+> Task :androidApp:createDebugApkListingFileRedirect
+
+[Incubating] Problems report is available at: file:///C:/Users/User/olcbox/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.7.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 5m 17s
+61 actionable tasks: 34 executed, 27 up-to-date
+Configuration cache entry stored.
